@@ -1,0 +1,205 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: #F0EDE7;
+    /* Cotton */
+    color: #281204;
+    /* Espresso */
+}
+
+/*header stuff here*/
+header {
+    background-color: #486676;
+    /* Denim */
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #F0EDE7;
+    /* Cotton */
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/*navigation stuff here*/
+nav {
+    background-color: #281204;
+    /* Espresso */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #F0EDE7;
+    /* Cotton */
+    min-height: 48px;
+    /* Ensures requirement is met */
+    box-sizing: border-box;
+}
+
+nav li.active a {
+    background-color: #9FB2CD;
+    /* Blubell */
+    color: #281204;
+    /* Espresso */
+    font-weight: 700;
+}
+
+nav li a:hover {
+    background-color: #AAAC5A;
+    /* Pistachio */
+    color: #281204;
+    /* Espresso */
+}
+
+/*main stuff here*/
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #281204;
+    /* Espresso */
+}
+
+main h2 {
+    color: #486676;
+    /* Denim */
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #281204;
+    /* Espresso */
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #ffffff;
+    /* White */
+}
+
+main dl dt {
+    color: #281204;
+    /* Espresso */
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #486676;
+    /* Denim */
+    font-size: .9rem;
+    margin-top: 20px;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: #281204;
+    /* Espresso */
+}
+
+main em {
+    font-weight: 300;
+}
+
+main address {
+    background-color: #AAAC5A;
+    /* Pistachio */
+    color: #281204;
+    /* Espresso */
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #281204;
+    /* Espresso */
+    width: 200px;
+    font-style: normal;
+}
+
+main address a {
+    color: #281204;
+    /* Espresso */
+    font-weight: 700;
+}
+
+main a {
+    color: #486676;
+    /* Denim */
+}
+
+main a:hover {
+    color: #281204;
+    /* Espresso */
+}
+
+/*main image stuff here*/
+figure.page {
+    margin: 0 0 0 10px;
+    width: 20%;
+    float: right;
+}
+
+figure.page img {
+    width: 100%;
+    height: auto;
+}
+
+figure.page figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/*Gallery stuff here*/
+
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px 15px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #281204;
+}
+
+
+/*footer stuff here*/
+footer {
+    background-color: #486676;
+    /* Denim */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #F0EDE7;
+    /* Cotton */
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+}
