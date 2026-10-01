@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Magazine - Travel Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- start the page header -->
+    <header>
+        <span>Travel Magazine</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Travel Gallery</a></li>
+            <li class="active"><a href="magazine.html">Order Magazine</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+        <h1>Order Travel Gallery Magazine</h1>
+        <form method="get" class="MyForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label> First Name* <input type="text" name="fname" required> </label>
+                <label> Last Name* <input type="text" name="lname" required> </label>
+                <label> Cell Number* <input type="tel" name="phone" required placeholder="800-000-0000"> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Edition Format</legend>
+                <label><input type="radio" name="format" value="print" checked> Print Edition ($9.99/issue) </label>
+                <label><input type="radio" name="format" value="collector"> Collector's Hardcover ($19.99/issue) </label>
+                <label><input type="radio" name="format" value="digital_print"> Digital + Print Combo ($14.99/issue) </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <label><input type="checkbox" name="porch" value="chosen">Leave on Front Porch</label>
+                <label><input type="checkbox" name="mailbox" value="chosen">Mailbox Delivery</label>
+                <label><input type="checkbox" name="gift" value="chosen">Gift Wrap Package</label>
+                <label><input type="checkbox" name="signature" value="chosen">Signature Required</label>
+
+                <label> Subscription Length
+                    <select name="subscription_length">
+                        <option value="none">Please select a duration</option>
+                        <option value="1month">1 Month Single Issue</option>
+                        <option value="2months">2 Months Subscription</option>
+                        <option value="6months">6 Months Subscription (Save 10%)</option>
+                        <option value="1year">1 Year Subscription (Save 20%)</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label>Delivery Instructions & Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Send Magazine Request">
+        </form>
+    </main>
+
+</body>
+</html>
