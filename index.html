@@ -1,39 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>dwdd 1600 assignment list page</title>
-	</head>
-	<body>
-		<h1>[Kaitlyn Familia] Web Essentials Assignment Page</h1>
-		<p><a href="01test/">My Test Assignment</a></p>
-		
-		<h3>Module 3</h3>
-		<p><a href="03follow-along/">03 Follow Along</a></p>
-		<p><a href="03hand-coding/">Hand Coding Assignment</a></p>
-		
-		<h3>Module 4</h3>
-		<p><a href="04follow-along/">04 Follow Along</a></p>
-		<p><a href="04intro-css/">Introduction to CSS Assignment</a></p>
-		
-		<h3>Module 5</h3>
-		<p><a href="05follow-along/">05 Follow Along</a></p>
-		<p><a href="05images/">Images Assignment</a></p>
-		
-		<h3>Module 6</h3>
-		<p><a href="06follow-along/">06 Follow Along</a></p>
-		<p><a href="06form/">Web Form Assignment</a></p>
-		
-		<h3>Module 7</h3>
-		<p><a href="07follow-along">07 Follow Along</a></p>
-		<p><a href="07advanced-css">Advanced CSS</a></p>
-		
-		<h3>Module 8</h3>
-		<p><a href="08follow-along">08 Follow Along</a></p>
-		<p><a href="08media">Media Assignment</a></p>
-		
-		<h3>Optional Capstone Activity</h3>
-		<p><a href="vacation">Vacation Web Site</a></p>
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kaitlyn Familia">
+    <meta name="description" content="Where will adventure take you next? Learn more to plan your next perfect trip!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where to Travel Next: Travel Tips</title>
+
+    <!-- Google Fonts (Open Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../05images/traveler.css">
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <span>Where to Travel Next</span>
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="../05images/">Travel Tips</a></li>
+            <li><a href="../05images/Europe.html">Europe</a></li>
+            <li><a href="../05images/National.html">National Parks</a></li>
+            <li><a href="../05images/italy.html">Italy</a></li>
+            <li><a href="../05images/DR.html">Dominican Republic</a></li>
+            <li><a href="../05images/Gallery.html">Photo Gallery</a></li>
+            <li class="active"><a href="../06form/">Order Magazine</a></li>
+        </ul>
+    </nav>
+    <!--start the main content-->
+    <main>
+        <h1>Order Magazine</h1>
+
+    <!-- start the page main -->
+  <main>
+        <h1>Order Travel Gallery Magazine</h1>
+        <form method="get" class="MyForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label> First Name* <input type="text" name="fname" required> </label>
+                <label> Last Name* <input type="text" name="lname" required> </label>
+                <label> Email Address* <input type="email" name="email" required placeholder="name@example.com"> </label>
+                <label> Cell Number* <input type="tel" name="phone" required placeholder="800-000-0000"> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Edition Format</legend>
+                <label><input type="radio" name="format" value="print" checked> Print Edition ($9.99/issue) </label>
+                <label><input type="radio" name="format" value="collector"> Collector's Hardcover ($19.99/issue) </label>
+                <label><input type="radio" name="format" value="digital_print"> Digital + Print Combo ($14.99/issue) </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery Options</legend>
+                <label> Preferred Start Date* <input type="date" name="start_date" required> </label>
+
+                <label><input type="checkbox" name="porch" value="chosen">Leave on Front Porch</label>
+                <label><input type="checkbox" name="mailbox" value="chosen">Mailbox Delivery</label>
+                <label><input type="checkbox" name="gift" value="chosen">Gift Wrap Package</label>
+                <label><input type="checkbox" name="signature" value="chosen">Signature Required</label>
+
+                <label> Subscription Length
+                    <select name="subscription_length">
+                        <option value="none">Please select a duration</option>
+                        <option value="1month">1 Month Single Issue</option>
+                        <option value="2months">2 Months Subscription</option>
+                        <option value="6months">6 Months Subscription (Save 10%)</option>
+                        <option value="1year">1 Year Subscription (Save 20%)</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label>Delivery Instructions & Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Send Magazine Request">
+        </form>
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2026 Kaitlyn Travel Website &bull; All Rights Reserved</p>
+        <address>
+            Travel Adventures<br>
+            123 Main Street<br>
+            Provo, UT 84601
+        </address>
+        <p>Call us: <a href="tel:8015551234">(801) 555-1234</a></p>
+    </footer>
+</body>
+
+
 </html>
