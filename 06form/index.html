@@ -41,48 +41,50 @@
         <h1>Order Magazine</h1>
 
     <!-- start the page main -->
-    <main>
-        <h1>Request a Delivery</h1>
-        <form method="get" class="MyForm" action="thanks.html">
+  <main>
+        <h1>Order Travel Gallery Magazine</h1>
+        <form method="get" class="myForm" action="thanks.html">
 
             <fieldset>
                 <legend>Customer Information</legend>
                 <label> First Name* <input type="text" name="fname" required> </label>
                 <label> Last Name* <input type="text" name="lname" required> </label>
+                <label> Email Address* <input type="email" name="email" required placeholder="name@example.com"> </label>
                 <label> Cell Number* <input type="tel" name="phone" required placeholder="800-000-0000"> </label>
             </fieldset>
 
             <fieldset>
-                <legend>Delivery Method</legend>
-                <label><input type="radio" name="method" value="drone">Drone Delivery (2hr) </label>
-                <label><input type="radio" name="method" value="cycle">Motorcycle (4hr) </label>
-                <label><input type="radio" name="method" value="robot">Robot Delivery (6hr) </label>
+                <legend>Edition Format</legend>
+                <label><input type="radio" name="format" value="print" checked> Print Edition ($9.99/issue) </label>
+                <label><input type="radio" name="format" value="collector"> Collector's Hardcover ($19.99/issue) </label>
+                <label><input type="radio" name="format" value="digital_print"> Digital + Print Combo ($14.99/issue) </label>
             </fieldset>
 
             <fieldset>
                 <legend>Delivery Options</legend>
-                <label><input type="checkbox" name="porch" value="chosen">Front Porch</label>
-                <label><input type="checkbox" name="deck" value="chosen">Back Deck</label>
-                <label><input type="checkbox" name="driveway" value="chosen">Driveway</label>
-                <label><input type="checkbox" name="garage" value="chosen">Garage</label>
+                <label> Preferred Start Date* <input type="date" name="start_date" required> </label>
 
-                <label> Prefered Delivery Time
-                    <select name="time">
-                        <option value="none">Please select</option>
-                        <option value="morning">Between 7:00 am and 11:00 am</option>
-                        <option value="noon">Between 11:00 am and 2:00 pm</option>
-                        <option value="afternoon">Between 2:00pm and 5:00pm</option>
-                        <option value="evening">Between 5:00pm and 8:00pm</option>
+                <label><input type="checkbox" name="porch" value="chosen">Leave on Front Porch</label>
+                <label><input type="checkbox" name="mailbox" value="chosen">Mailbox Delivery</label>
+                <label><input type="checkbox" name="gift" value="chosen">Gift Wrap Package</label>
+                <label><input type="checkbox" name="signature" value="chosen">Signature Required</label>
+
+                <label> Subscription Length
+                    <select name="subscription_length">
+                        <option value="none">Please select a duration</option>
+                        <option value="1month">1 Month Single Issue</option>
+                        <option value="2months">2 Months Subscription</option>
+                        <option value="6months">6 Months Subscription (Save 10%)</option>
+                        <option value="1year">1 Year Subscription (Save 20%)</option>
+                    </select>
                 </label>
-                </select>
             </fieldset>
 
-            <label>Comments
+            <label>Delivery Instructions & Comments
                 <textarea name="comments"></textarea>
             </label>
 
-
-            <input type="submit" value="Send Delivery Request">
+            <input type="submit" value="Send Magazine Request">
         </form>
     </main>
 
