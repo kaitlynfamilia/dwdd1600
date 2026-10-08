@@ -36,40 +36,66 @@
             <li class="active"><a href="../06form/">Order Magazine</a></li>
         </ul>
     </nav>
+
     <!--start the main content-->
     <main>
-        <h1>Order Magazine</h1>
-
-    <!-- start the page main -->
-  <main>
         <h1>Order Travel Gallery Magazine</h1>
-        <form method="get" class="myForm" action="thanks.html">
 
+        <form method="get" class="myForm" action="thanks.html">
             <fieldset>
                 <legend>Customer Information</legend>
-                <label> First Name* <input type="text" name="fname" required> </label>
-                <label> Last Name* <input type="text" name="lname" required> </label>
-                <label> Email Address* <input type="email" name="email" required placeholder="name@example.com"> </label>
-                <label> Cell Number* <input type="tel" name="phone" required placeholder="800-000-0000"> </label>
+
+                <label> First Name*
+                    <input type="text" name="fname" required>
+                </label>
+
+                <label> Last Name*
+                    <input type="text" name="lname" required>
+                </label>
+
+                <label> Email Address*
+                    <input type="email" name="email" required placeholder="name@example.com">
+                </label>
+
+                <label> Cell Number*
+                    <input type="tel" name="phone" required placeholder="800-000-0000">
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Edition Format</legend>
-                <label><input type="radio" name="format" value="print" checked> Print Edition ($9.99/issue) </label>
-                <label><input type="radio" name="format" value="collector"> Collector's Hardcover ($19.99/issue) </label>
-                <label><input type="radio" name="format" value="digital_print"> Digital + Print Combo ($14.99/issue) </label>
+
+                <label>
+                    <input type="radio" name="format" value="print" checked>
+                    Print Edition ($9.99/issue)
+                </label>
+
+                <label>
+                    <input type="radio" name="format" value="collector">
+                    Collector's Hardcover ($19.99/issue)
+                </label>
+
+                <label>
+                    <input type="radio" name="format" value="digital_print">
+                    Digital + Print Combo ($14.99/issue)
+                </label>
             </fieldset>
 
             <fieldset>
                 <legend>Delivery Options</legend>
-                <label> Preferred Start Date* <input type="date" name="start_date" required> </label>
+
+                <label>
+                    Preferred Start Date*
+                    <input type="date" name="start_date" required>
+                </label>
 
                 <label><input type="checkbox" name="porch" value="chosen">Leave on Front Porch</label>
                 <label><input type="checkbox" name="mailbox" value="chosen">Mailbox Delivery</label>
                 <label><input type="checkbox" name="gift" value="chosen">Gift Wrap Package</label>
                 <label><input type="checkbox" name="signature" value="chosen">Signature Required</label>
 
-                <label> Subscription Length
+                <label>
+                    Subscription Length
                     <select name="subscription_length">
                         <option value="none">Please select a duration</option>
                         <option value="1month">1 Month Single Issue</option>
@@ -80,7 +106,8 @@
                 </label>
             </fieldset>
 
-            <label>Delivery Instructions & Comments
+            <label>
+                Delivery Instructions & Comments
                 <textarea name="comments"></textarea>
             </label>
 
@@ -91,14 +118,16 @@
     <!--start the page footer-->
     <footer>
         <p>&copy; 2026 Kaitlyn Travel Website &bull; All Rights Reserved</p>
+
         <address>
             Travel Adventures<br>
             123 Main Street<br>
             Provo, UT 84601
         </address>
+
         <p>Call us: <a href="tel:8015551234">(801) 555-1234</a></p>
     </footer>
-</body>
 
+</body>
 
 </html>
