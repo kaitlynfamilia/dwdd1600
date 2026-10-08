@@ -276,3 +276,32 @@ footer p {
     margin: 0;
     letter-spacing: 3px;
 }
+
+/* Gallery Layout */
+div.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    padding: 20px 0;
+}
+
+div.gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Removes default browser figure margins */
+}
+
+div.gallery img {
+    width: 100%;
+    height: 180px;         /* Overrides HTML height attributes to keep all images equal */
+    object-fit: cover;     /* Crops photos neatly without stretching */
+    border-radius: 8px;    /* Adds rounded corners */
+    display: block;
+}
+
+div.gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    text-align: center;
+}
