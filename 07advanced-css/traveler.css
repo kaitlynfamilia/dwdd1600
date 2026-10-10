@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: #F0EDE7;
+    /* Cotton */
+    color: #281204;
+    /* Espresso */
+}
+
+/*header stuff here*/
+header {
+    background-color: #486676;
+    /* Denim */
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #F0EDE7;
+    /* Cotton */
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* small screen nav*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #486676;
+        text-decoration: none;
+        border-bottom: solid 1px #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    nav .active a {
+        background-color: #486676;
+        color: white;
+    }
+
+}
+
+/* end small screen*/
+
+
+
+
+
+
+/* large screen nav*/
+@media only screen and (min-width: 601px) {
+    nav {
+        border-top: solid 1px #E0E6E6;
+    }
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1.2rem 1rem .3rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #486676;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: solid 2px #fff;
+}
+
+
+
+
+/*navigation stuff here*/
+nav {
+    background-color: #281204;
+    /* Espresso */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #F0EDE7;
+    /* Cotton */
+    min-height: 48px;
+    /* Ensures requirement is met */
+    box-sizing: border-box;
+}
+
+nav li.active a {
+    background-color: #9FB2CD;
+    /* Blubell */
+    color: #281204;
+    /* Espresso */
+    font-weight: 700;
+}
+
+nav li a:hover {
+    background-color: #AAAC5A;
+    /* Pistachio */
+    color: #281204;
+    /* Espresso */
+}
+
+/*main stuff here*/
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #281204;
+    /* Espresso */
+}
+
+main h2 {
+    color: #486676;
+    /* Denim */
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #281204;
+    /* Espresso */
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #ffffff;
+    /* White */
+}
+
+main dl dt {
+    color: #281204;
+    /* Espresso */
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #486676;
+    /* Denim */
+    font-size: .9rem;
+    margin-top: 20px;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: #281204;
+    /* Espresso */
+}
+
+main em {
+    font-weight: 300;
+}
+
+main address {
+    background-color: #AAAC5A;
+    /* Pistachio */
+    color: #281204;
+    /* Espresso */
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #281204;
+    /* Espresso */
+    width: 200px;
+    font-style: normal;
+}
+
+main address a {
+    color: #281204;
+    /* Espresso */
+    font-weight: 700;
+}
+
+main a {
+    color: #486676;
+    /* Denim */
+}
+
+main a:hover {
+    color: #281204;
+    /* Espresso */
+}
+
+
+
+/*main image stuff here*/
+figure.page {
+    margin: 0 0 0 10px;
+    width: 20%;
+    float: right;
+}
+
+figure.page img {
+    width: 100%;
+    height: auto;
+}
+
+figure.page figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+/*Gallery stuff here*/
+div.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px 15px;
+    align-items: start;
+}
+
+div.gallery figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fixes the uneven image sizing and overlapping */
+div.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+div.gallery img:hover {
+ box-shadow: 0px 0px 10px #281204;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #281204;
+    margin-top: 8px;
+}
+
+.myForm fieldset {
+    border: 1px solid #486676;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #486676;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label,
+.myForm select,
+.myForm [type=text],
+.myForm [type=email],
+.myForm [type=tel],
+.myForm [type=date],
+.myForm textarea {
+    display: block;
+}
+
+.myForm [type=text],
+.myForm [type=email],
+.myForm [type=tel],
+.myForm [type=date],
+.myForm select,
+.myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #486676;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    cursor: pointer;
+}
+
+.myForm [type=submit]:hover {
+    background-color: #354b57;
+}
+
+
+/*footer stuff here*/
+footer {
+    background-color: #486676;
+    /* Denim */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #F0EDE7;
+    /* Cotton */
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+/* Gallery Layout */
+div.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    padding: 20px 0;
+}
+
+div.gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    /* Removes default browser figure margins */
+}
+
+div.gallery img {
+    width: 100%;
+    height: 180px;
+    /* Overrides HTML height attributes to keep all images equal */
+    object-fit: cover;
+    /* Crops photos neatly without stretching */
+    border-radius: 8px;
+    /* Adds rounded corners */
+    display: block;
+}
+
+div.gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    text-align: center;
+}
