@@ -336,6 +336,28 @@ div.gallery figcaption {
     background-color: #354b57;
 }
 
+table.activity {
+    width: 100%;
+border-collapse: collapse;
+}
+table.activity th {
+    background-color: #354b57;
+    color: white;
+    padding: .6rem 2%;
+    text-align: left;
+}
+table.activity td {
+    color: #281204;
+    padding: .4rem 2%;
+
+}
+table.activitiy tr:nth-child(odd) {
+    background-color: #eee;
+}
+table.activity tr:hover {
+    background-color: #ddd;
+}
+
 
 /*footer stuff here*/
 footer {
