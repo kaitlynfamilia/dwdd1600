@@ -53,21 +53,23 @@ header span {
         color: white;
     }
 
+
+
     /* Small screen navigation */
-    @media screen and (max-width: 600px) {
-        nav ul {
-            flex-direction: column;
-        }
-
-        nav ul li {
-            width: 100%;
-        }
-
-        nav ul li a {
-            display: block;
-        }
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
     }
 
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+    }
+}
 }
 
 /* end small screen*/
@@ -426,4 +428,28 @@ div.gallery figcaption {
     margin-top: 8px;
     font-size: 0.85rem;
     text-align: center;
+}
+
+/* Mobile navigation */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 12px 10px;
+    }
 }
