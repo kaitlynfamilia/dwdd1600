@@ -53,6 +53,23 @@ header span {
         color: white;
     }
 
+
+
+    /* Small screen navigation */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+    }
+}
 }
 
 /* end small screen*/
@@ -264,8 +281,9 @@ div.gallery img {
     display: block;
     border-radius: 4px;
 }
+
 div.gallery img:hover {
- box-shadow: 0px 0px 10px #281204;
+    box-shadow: 0px 0px 10px #281204;
 }
 
 div.gallery figcaption {
@@ -338,22 +356,26 @@ div.gallery figcaption {
 
 table.activity {
     width: 100%;
-border-collapse: collapse;
+    border-collapse: collapse;
 }
+
 table.activity th {
     background-color: #354b57;
     color: white;
     padding: .6rem 2%;
     text-align: left;
 }
+
 table.activity td {
     color: #281204;
     padding: .4rem 2%;
 
 }
+
 table.activitiy tr:nth-child(odd) {
     background-color: #eee;
 }
+
 table.activity tr:hover {
     background-color: #ddd;
 }
