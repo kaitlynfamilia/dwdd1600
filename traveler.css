@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -6,10 +5,10 @@
 
 
 
-
 body {
     font-family: "Open Sans", sans-serif;
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #F0EDE7;
     /* Cotton */
     color: #281204;
@@ -20,6 +19,7 @@ body {
 header {
     background-color: #486676;
     /* Denim */
+    background: linear-gradient(135deg, #486676, #2c3e50);
     padding: 1rem 10px;
 }
 
